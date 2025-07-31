@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashish Singh Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's me</h3>
+      <h1>Ashish Singh</h1>
+      <h3>And I'm a <span>Web Developer and ML Practitioner</span></h3>
+      <p>
+        I am Ashish Singh, a dedicated Web Developer and an enthusiastic learner of Machine Learning and AI.
+        Since 2024, I've been crafting beautiful, functional websites and expanding my knowledge in AI. Feel free to check
+        out my projects and connect with me!
+      </p>
+      <div class="social-media">
+        <a href="https://www.instagram.com/ashish_singh_0o7/"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ashish-singh-b27173236/"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/ashish-singh-1542002"><i class="bx bxl-github"></i></a>
+      </div>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+    <div class="home-img">
+      <img src="images/home.jpg" alt="Ashish Singh" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/home.jpg" alt="About Image" />
+    </div>
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p id="about-text">
+        I'm Ashish Singh — a curious Web Developer, Machine Learning practitioner, Data Scientist, and a passionate DevOps learner.
+        I love solving real-world problems using technology.
+        <span id="dots">...</span>
+        <span id="more" style="display: none">
+          My learning never stops — I constantly seek new tools, frameworks, and technologies to enhance my skills.
+          Whether it’s building intelligent systems or deploying scalable cloud solutions, I thrive on challenge and innovation.
+          I’ve developed several hands-on projects that reflect my technical abilities and creativity.
+        </span>
+      </p>
+      <a href="#about" class="btn" onclick="toggleReadMore('dots','more','read-more-btn')" id="read-more-btn">Read More</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2 class="heading">Our <span style="color: var(--main-color)">Services</span></h2>
+    <div class="services-container">
+      <div class="services-box">
+        <i class="bx bx-code-alt"></i>
+        <h3>Web Development</h3>
+        <p>
+          Your website needs consistent refinement, upgrades, and updates to avoid appearing outdated.
+          <span id="dots1">...</span>
+          <span id="more1" style="display: none">
+            Without regular updates, it becomes a static brochure that doesn't reflect the dynamic nature of your business.
+          </span>
+        </p>
+        <a href="#services" class="btn" onclick="toggleReadMore('dots1','more1','read-more-btn1')" id="read-more-btn1">Read More</a>
+      </div>
+
+      <div class="services-box">
+        	<i class="fas fa-chart-bar"></i>
+        <h3>Data Science</h3>
+        <p>
+          I analyze and interpret large volumes of data to extract actionable insights.
+          <span id="dots2">...</span>
+          <span id="more2" style="display: none">
+            From data cleaning to predictive modeling, I use machine learning and visualization tools to solve real-world problems across domains.
+          </span>
+        </p>
+        <a href="#services" class="btn" onclick="toggleReadMore('dots2','more2','read-more-btn2')" id="read-more-btn2">Read More</a>
+      </div>
+
+      <div class="services-box">
+        <i class="fas fa-robot"></i>
+        <h3>Machine Learning</h3>
+        <p>
+          From data preprocessing to model deployment,
+          <span id="dots3">...</span>
+          <span id="more3" style="display: none">
+           I offer end-to-end ML solutions that solve business problems using data.
+          </span> 
+        </p>
+        <a href="#services" class="btn" onclick="toggleReadMore('dots3','more3','read-more-btn3')" id="read-more-btn3">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="images/whatsapp chat analyzer.jpg" alt="Project 1" />
+        <div class="portfolio-layer">
+          <h4>WhatsApp Chat Analyzer</h4>
+          <p>A tool to analyze group chats, identify top participants, active times, and sentiment patterns using Python and NLP.</p>
+          <a href="https://threappdgit-cc5eu3ft8ydufveurlrkfh.streamlit.app/"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <!-- Duplicate below for more projects -->
+      <div class="portfolio-box">
+        <img src="images/nn.jpg" alt="Project 2" />
+        <div class="portfolio-layer">
+          <h4>Noise Analyzer</h4>
+          <p>Built a real-time sound pollution analysis web app with interactive filters, helping urban planners and researchers. Deployed on Streamlit Cloud for easy access and visualization.</p>
+          <a href="https://noise-analyser.streamlit.app/"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/codeEditor.jpg" alt="Project 3" id="codeEdi" />
+        <div class="portfolio-layer">
+          <h4>CodeEditor</h4>
+          <p>Real-Time-Code-Editor enables users to see each others code and make changes instantly, ensuring synchronized updates and improved teamwork.</p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span></h2>
+
+  <form action="https://formsubmit.co/ashishsingh1542002@gmail.com" method="POST">
+    <
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_template" value="table" />
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html" />
+
+    <div class="input-box">
+      <input type="text" name="fullName" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+    </div>
+    <div class="input-box">
+      <input type="number" name="mobile" placeholder="Mobile Number" />
+      <input type="text" name="subject" placeholder="Email Subject" />
+    </div>
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn" />
+  </form>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>&copy; 2024 Ashish Singh | All rights reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function toggleReadMore(dotsId, moreId, btnId) {
+      const dots = document.getElementById(dotsId);
+      const more = document.getElementById(moreId);
+      const btn = document.getElementById(btnId);
+
+      if (more.style.display === "none") {
+        dots.style.display = "none";
+        more.style.display = "inline";
+        btn.innerText = "Read Less";
+      } else {
+        dots.style.display = "inline";
+        more.style.display = "none";
+        btn.innerText = "Read More";
+      }
+    }
+  </script>
+
+</body>
+</html>
